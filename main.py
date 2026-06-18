@@ -1,6 +1,7 @@
 from src.seqDownload import download_sequences
 from src.filter_sequences import filter_sequences
 from src.align_seq import align_seq
+from src.tree import build_tree
 import argparse
 import json
 
@@ -14,7 +15,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     with open("dataConfig.json", "r") as config_file:
-        config = json.load(config_file)ali
+        config = json.load(config_file)
     
     if args.step == "download":
         download_sequences(config)
@@ -23,4 +24,9 @@ if __name__ == "__main__":
     elif args.step == "align":
         align_seq(config)
     elif args.step == "tree":
-        
+        build_tree(config)
+    elif args.step == "all":
+        download_sequences(config)
+        filter_sequences(config)
+        align_seq(config)
+        build_tree(config)
