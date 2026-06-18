@@ -1,4 +1,38 @@
-{
-  "email": "tu_email@example.com",
-  "api_key": "tu_api_key_aqui"
+{ 
+    
+"Entrez": {
+    "email" : "email@example.com",
+    "api_key" : "your_api_key_here"},
+
+"Query": {
+    "organism": "Andes orthohantavirus",
+    "gene": "nucleocapsid",
+    "outgroup_rank": "genus",
+    "database": "nucleotide"},
+
+"Filter": {
+    "min_length": 900,
+    "max_length": 2000,
+    "max_ambiguous_bases": 10000},
+
+"alignment": {
+    "IterativeRefinementMethod": "--localpair",
+    "maxiterate": 1000},
+
+"tree": {
+        "model": "MFP",
+        "bootstrap_num": 1000,
+        "threads": "AUTO",
+        "seed": 84
+    },
+
+"paths": {
+        "raw_sequences": "data/raw/sequences.fasta",
+        "outgroup_sequence": "data/raw/outgroup.fasta",
+        "filtered_sequences": "data/processed/sequences_filtered.fasta",
+        "combined_sequences": "data/processed/sequences_combined.fasta",
+        "alignment": "data/processed/alignment.fasta",
+        "tree": "results/trees/tree_nj.nwk",
+        "figure_tree": "results/figures/tree.png"
+    }
 }

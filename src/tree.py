@@ -32,7 +32,7 @@ def build_tree(config):
     if iqtree_path is None:
         raise RuntimeError("IQ-TREE not found in PATH. Install it with:\n" "  conda install -c bioconda iqtree\n" "Or download from: https://github.com/iqtree/iqtree/releases")
 
-    result = subprocess.run([iqtree_path, "-s", alignments_path, "-o", outgroup_id, "-m", model, "-bb", str(bootstrap), "-nt", threads, "-seed", str(seed), "-pre", tree_path, "-redo"], capture_output=True, text=True)
+    result = subprocess.run([iqtree_path, "-s", alignments_path, "-o", outgroup_id, "-m", model, "-bb", str(bootstrap), "-nt", str(threads) , "-seed", str(seed), "-pre", tree_path, "-redo"], capture_output=True, text=True)
     
     if result.returncode != 0:
         raise RuntimeError(f"IQ-TREE failed:\n{result.stderr}")

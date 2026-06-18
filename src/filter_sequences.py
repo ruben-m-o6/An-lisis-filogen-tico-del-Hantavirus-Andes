@@ -15,9 +15,9 @@ def has_premature_stops(seq_str):
     return True
 
 def filter_sequences(config):
-    min_length = config["Filtrar"]["min_length"]
-    max_length = config["Filtrar"]["max_length"]
-    max_ambiguous_bases = config["Filtrar"]["max_ambiguous_bases"]
+    min_length = config["Filter"]["min_length"]
+    max_length = config["Filter"]["max_length"]
+    max_ambiguous_bases = config["Filter"]["max_ambiguous_bases"]
 
     filtered_records = []
     seen_ids= set()
