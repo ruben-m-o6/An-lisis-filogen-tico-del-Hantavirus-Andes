@@ -4,19 +4,29 @@ from src.align_seq import align_seq
 from src.tree import build_tree
 import argparse
 import json
+import logging
 
 
 
 
 if __name__ == "__main__":
     
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
+    
     parser = argparse.ArgumentParser(description="Phylogenetic analysis pipeline — Andes orthohantavirus")
     parser.add_argument("--step", choices=["download", "filter", "align", "tree", "all"], required=True)
+    parser.add_argument("--config", type=str, default="dataConfig.json", help="Path to the configuration JSON file (default: dataConfig.json)")
     args = parser.parse_args()
     
-    with open("dataConfig.json", "r") as config_file:
-        config = json.load(config_file)
+    logging.info(f"Starting pipeline with step: {args.step} and with configuration file: {args.config}")
     
+    try:
+        with open(args.config, "r") as config_file:
+            config = json.load(config_file)
+    except FileNotFoundError:
+        logging.error(f"Configuration file not found: {args.config}")
+        exit(1)
+
     if args.step == "download":
         download_sequences(config)
     elif args.step == "filter":
@@ -30,3 +40,5 @@ if __name__ == "__main__":
         filter_sequences(config)
         align_seq(config)
         build_tree(config)
+        
+    logging.info("Pipeline completed successfully.")
