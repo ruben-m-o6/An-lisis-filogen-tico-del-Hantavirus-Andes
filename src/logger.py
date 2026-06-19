@@ -8,10 +8,13 @@ Path("results").mkdir(parents=True, exist_ok=True)
 logger = logging.getLogger("phylo_pipeline")
 logger.setLevel(logging.INFO)
 
+# Prevent log messages from being propagated to the root loggers
+logger.propagate = False
+
 if not logger.handlers:
     
     # File Handler for logging to a file
-    fh = logging.FileHandler("results/queries.log", encoding="utf-8")
+    fh = logging.FileHandler("results/queries.log", mode="w", encoding="utf-8")
     fh.setLevel(logging.INFO)
     
     # Console Handler for logging to the console

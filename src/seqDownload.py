@@ -1,4 +1,5 @@
 from Bio import Entrez
+from src.logger import logger
 from src.get_outgroup import get_outgroup
 import json
 from urllib.error import HTTPError, URLError
@@ -42,6 +43,7 @@ def download_sequences(config):
         outgroup_sequence = config["paths"]["outgroup_sequence"]
         
     except KeyError as missing_key:
+        logger.error(f"Configuration error. Missing key: {missing_key}")
         raise KeyError(f"Error de configuración. Falta la clave: {missing_key}")
 
     Entrez.email = email
@@ -53,8 +55,12 @@ def download_sequences(config):
     Path(outgroup_sequence).parent.mkdir(parents=True, exist_ok=True)
     
     try:
+        logger.info(f"Querying NCBI {database} for organism '{organism}' and gene '{gene}'")
         search1 = Entrez.esearch(db=database, term=query_term, retmax=0)
         total_count = int(Entrez.read(search1)['Count'])
+        if total_count == 0:
+            logger.error(f"No sequences found for organism '{organism}' and gene '{gene}' in NCBI {database}.")
+            raise ValueError(f"No sequences found for organism '{organism}' and gene '{gene}' in NCBI {database}.")
         search1.close()
 
 
@@ -70,23 +76,23 @@ def download_sequences(config):
             file.write(records.read())
         records.close()
 
-        print(f"Sequences downloaded and saved to {raw_sequences}: {record_count}")
-
+        logger.info(f"Sequences downloaded and saved to {raw_sequences}: {record_count}")
+        
         outgroup_id = get_outgroup(organism, gene, email, api_key, outgroup_rank)
 
-        if outgroup_id:
-            print(f"Outgroup ID found: {outgroup_id}")
-            outgroup_record = Entrez.efetch(db=database, id=outgroup_id, rettype="fasta", retmode="text")
-            fasta_text = outgroup_record.read()
-            modified_fasta = fasta_text.replace(">", ">outgroup_", 1)
+        logger.info(f"Outgroup ID found: {outgroup_id}")
+        outgroup_record = Entrez.efetch(db=database, id=outgroup_id, rettype="fasta", retmode="text")
+        fasta_text = outgroup_record.read()
+        modified_fasta = fasta_text.replace(">", ">outgroup_", 1)
             
-            with open(outgroup_sequence, "w") as outgroup_file:
-                outgroup_file.write("\n" + modified_fasta)
-            outgroup_record.close()
-        else:
-            print("Could not find a suitable outgroup for the phylogenetic analysis.")
+        with open(outgroup_sequence, "w") as outgroup_file:
+            outgroup_file.write(modified_fasta)
+        outgroup_record.close()
+
             
     except (HTTPError, URLError) as network_error:
+        logger.error(f"Failure connecting to NCBI during download: {network_error}")
         raise ConnectionError(f"Failure connecting to NCBI during download: {network_error}")
     except RuntimeError as entrez_error:
+        logger.error(f"Failure processing Entrez data: {entrez_error}")
         raise RuntimeError(f"Failure processing Entrez data: {entrez_error}")

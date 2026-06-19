@@ -1,5 +1,6 @@
 from Bio import Entrez
 from urllib.error import HTTPError, URLError
+from src.logger import logger
 
 def get_outgroup(ingroup_taxon, target_gene, email, api_key, higher_rank):
     """
@@ -11,12 +12,11 @@ def get_outgroup(ingroup_taxon, target_gene, email, api_key, higher_rank):
     of the target gene belonging to that ancestral clade, strictly excluding the ingroup itself.
 
     Args:
-        ingroup_taxon (str): Scientific name of the target organism (e.g., "Homo sapiens").
-        target_gene (str): The specific gene to search for (e.g., "COI", "16S rRNA").
+        ingroup_taxon (str): Scientific name of the target organism.
+        target_gene (str): The specific gene to search for .
         email (str): Valid email address for NCBI Entrez authentication (required by NCBI).
         api_key (str): NCBI API key to increase the request rate limit (up to 10 requests/sec).
-        higher_rank (str): The taxonomic rank used to define the ancestral clade 
-            (e.g., "family", "order").
+        higher_rank (str): The taxonomic rank used to define the ancestral clade (e.g., "family", "order").
 
     Returns:
         str: The unique NCBI nucleotide database accession ID (or UID) of the outgroup sequence.
@@ -31,11 +31,15 @@ def get_outgroup(ingroup_taxon, target_gene, email, api_key, higher_rank):
     """
     Entrez.email = email
     Entrez.api_key = api_key
+    
+    logger.info(f"Searching for outgroup for ingroup '{ingroup_taxon}' at rank '{higher_rank}' targeting gene '{target_gene}'")
 
     try:
+        logger.info(f"Querying NCBI Taxonomy for ingroup taxon '{ingroup_taxon}'")
         search = Entrez.esearch(db="taxonomy", term=ingroup_taxon)
         search_results = Entrez.read(search)
         if search_results["Count"] == "0":
+            logger.error(f"Could not find the taxon '{ingroup_taxon}' in the NCBI taxonomy database.")
             raise ValueError(f"Could not find the taxon '{ingroup_taxon}' in the NCBI taxonomy database.")
         taxid = search_results["IdList"][0]
         search.close()
@@ -50,7 +54,9 @@ def get_outgroup(ingroup_taxon, target_gene, email, api_key, higher_rank):
             if t["Rank"] == higher_rank:
                 ancestor = t
                 break
+            
         if ancestor is None:
+            logger.error(f"Could not find an ancestor with rank '{higher_rank}' for taxon '{ingroup_taxon}'.")
             raise ValueError(f"Could not find an ancestor with rank '{higher_rank}' for taxon '{ingroup_taxon}'.")
             
         query_term = f'txid{ancestor["TaxId"]}[Organism] AND {target_gene}[Title] NOT {ingroup_taxon}[Organism] AND complete cds[Title]'
@@ -59,11 +65,15 @@ def get_outgroup(ingroup_taxon, target_gene, email, api_key, higher_rank):
         search2.close()
         
         if not ids:
+            logger.error(f"Could not find an outgroup in rank '{higher_rank}'.")
             raise ValueError(f"Could not find an outgroup in rank '{higher_rank}'.")
         return ids[0]
     
     except (HTTPError, URLError) as network_error:
+        logger.error(f"Connection error with NCBI: {network_error}")
         raise ConnectionError(f"Connection error with NCBI: {network_error}")
+    
     except RuntimeError as entrez_error:
+        logger.error(f"Error processing Entrez data: {entrez_error}")
         raise RuntimeError(f"Error processing Entrez data: {entrez_error}")
     
