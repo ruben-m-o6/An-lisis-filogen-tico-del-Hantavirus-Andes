@@ -3,6 +3,7 @@ import subprocess
 from Bio import SeqIO
 from Bio import Phylo
 from matplotlib import pyplot as plt
+from src.logger import logger
 import shutil
 
 def build_tree(config):
@@ -55,10 +56,13 @@ def build_tree(config):
         bootstrap = config["tree"]["bootstrap_num"]
         threads = config["tree"]["threads"]
         seed = config["tree"]["seed"]
+        
     except KeyError as missing_key:
+        logger.error(f"Configuration error. Missing key: {missing_key}")
         raise KeyError(f"Missing required configuration key: {missing_key}")
     
     if not Path(alignments_path).is_file():
+        logger.error(f"Alignment file not found: {alignments_path}")
         raise FileNotFoundError(f"Alignment file not found: {alignments_path}")
       
     Path(tree_path).parent.mkdir(parents=True, exist_ok=True)
@@ -70,19 +74,23 @@ def build_tree(config):
             break    
         
     if outgroup_id is None:
+        logger.error("No outgroup sequence found in alignment")
         raise ValueError("No outgroup sequence found in alignment")
     
     iqtree_path = shutil.which("iqtree")
 
     if iqtree_path is None:
+        logger.error("IQ-TREE not found in PATH. Install it with:\n  conda install -c bioconda iqtree\nOr download from: https://github.com/iqtree/iqtree/releases")
         raise RuntimeError("IQ-TREE not found in PATH. Install it with:\n" "  conda install -c bioconda iqtree\n" "Or download from: https://github.com/iqtree/iqtree/releases")
 
     result = subprocess.run([iqtree_path, "-s", alignments_path, "-o", outgroup_id, "-m", model, "-bb", str(bootstrap), "-nt", str(threads) , "-seed", str(seed), "-pre", tree_path, "-redo"], capture_output=True, text=True)
     
     if result.returncode != 0:
+        logger.error(f"IQ-TREE failed:\n{result.stderr}, {result.stdout}")
         raise RuntimeError(f"IQ-TREE failed:\n{result.stderr}, {result.stdout}")
      
     if not Path(tree_path + ".treefile").is_file():
+        logger.error(f"IQ-TREE finished, but could not find the expected output tree: {tree_path + '.treefile'}")
         raise FileNotFoundError(f"IQ-TREE finished, but could not find the expected output tree: {tree_path + '.treefile'}")
     
     tree = Phylo.read(tree_path + ".treefile", "newick")
@@ -99,5 +107,5 @@ def build_tree(config):
     plt.savefig(treepng_path, dpi=300, bbox_inches='tight')
     plt.close(fig)
         
-    print(f"Tree figure saved to: {treepng_path}")
+    logger.info(f"Tree figure saved to: {treepng_path}")
     

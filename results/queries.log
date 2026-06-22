@@ -1,5 +1,3 @@
-2026-06-19 22:39:01,715	phylo_pipeline	INFO	Querying NCBI nucleotide for organism 'Andes orthohantavirus' and gene 'nucleocapsid'
-2026-06-19 22:39:03,300	phylo_pipeline	INFO	Sequences downloaded and saved to data/raw/sequences.fasta: 116
-2026-06-19 22:39:03,301	phylo_pipeline	INFO	Searching for outgroup for ingroup 'Andes orthohantavirus' at rank 'genus' targeting gene 'nucleocapsid'
-2026-06-19 22:39:03,301	phylo_pipeline	INFO	Querying NCBI Taxonomy for ingroup taxon 'Andes orthohantavirus'
-2026-06-19 22:39:04,647	phylo_pipeline	INFO	Outgroup ID found: 3101830602
+2026-06-22 14:56:51,957	phylo_pipeline	INFO	Starting pipeline with step: tree and with configuration file: dataConfig.json
+2026-06-22 14:57:38,673	phylo_pipeline	INFO	Tree figure saved to: results/figures/tree.png
+2026-06-22 14:57:38,675	phylo_pipeline	INFO	Pipeline completed successfully.

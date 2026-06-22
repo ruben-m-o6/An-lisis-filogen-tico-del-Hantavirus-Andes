@@ -4,6 +4,7 @@ from Bio import Entrez
 import pandas as pd
 import json
 from pathlib import Path
+from src.logger import logger
 
 def has_premature_stops(seq_str):
     """
@@ -14,14 +15,14 @@ def has_premature_stops(seq_str):
         seq_str (str): The nucleotide sequence as a string.
         
     Returns:
-        bool: True if at least one valid reading frame is found, False otherwise.
+        bool: True if finds a valid ORF without premature stop codons, False otherwise. 
     """
     reverse_seq = str(Seq(seq_str).reverse_complement())
     for seq in [seq_str, reverse_seq]:
         for frame in [0,1,2]:
             fragment = seq[frame: len(seq) - (len(seq) - frame) % 3]
             translated_seq = str(Seq(fragment).translate())
-            if translated_seq[:-1].count('*') > 0:
+            if translated_seq[:-1].count('*') == 0:
                 return False
     return True
 
@@ -61,6 +62,7 @@ def filter_sequences(config):
         filtered_seqs = config["paths"]["filtered_sequences"]
         
     except KeyError as missing_key:
+        logger.error(f"Configuration error. Missing key: {missing_key}")
         raise KeyError(f"Error de configuración. Falta la clave: {missing_key}")
     
     Path(filtered_seqs).parent.mkdir(parents=True, exist_ok=True)
@@ -80,5 +82,5 @@ def filter_sequences(config):
 
         
     SeqIO.write(filtered_records, filtered_seqs, "fasta")
-    print(f"Filtered sequences saved to {filtered_seqs}: {len(filtered_records)} records")
+    logger.info(f"Filtered sequences saved to {filtered_seqs}: {len(filtered_records)} records")
 
