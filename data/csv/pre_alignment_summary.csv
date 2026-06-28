@@ -1,0 +1,2 @@
+n_sequences,mean_length,median_length,mean_gc_content,median_gc_content,max_ambiguous_perc,gc_outliers,mean_pairwise_identity,mean_pairwise_coverage
+18,1005.3333333333334,943.0,43.578088804735444,43.84941675503712,0.0,0,66.59345202408072,90.89009578999377

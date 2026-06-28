@@ -4,6 +4,7 @@ from src.align_seq import align_seq
 from src.tree import build_tree
 from src.metadata import get_metadata
 from src.logger import logger
+from src.EDA_pre_alignment import pre_alignment_eda
 import argparse
 import json
 
@@ -13,7 +14,7 @@ import json
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Phylogenetic analysis pipeline — Andes orthohantavirus")
-    parser.add_argument("--step", choices=["download", "filter", "get_metadata", "align", "tree", "all"], required=True)
+    parser.add_argument("--step", choices=["download", "filter", "get_metadata", "pre_alignment_eda" , "align", "tree", "all"], required=True)
     parser.add_argument("--config", type=str, default="dataConfig.json", help="Path to the configuration JSON file (default: dataConfig.json)")
     args = parser.parse_args()
     
@@ -32,6 +33,8 @@ if __name__ == "__main__":
         filter_sequences(config)
     elif args.step == "get_metadata":
         get_metadata(config)
+    elif args.step == "pre_alignment_eda":
+        pre_alignment_eda(config)
     elif args.step == "align":
         align_seq(config)
     elif args.step == "tree":
@@ -39,6 +42,7 @@ if __name__ == "__main__":
     elif args.step == "all":
         download_sequences(config)
         filter_sequences(config)
+        pre_alignment_eda(config)
         get_metadata(config)
         align_seq(config)
         build_tree(config)

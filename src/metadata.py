@@ -46,7 +46,7 @@ def get_metadata(config):
     try:
         filtered_sequences_path = config["paths"]["filtered_sequences"]
         annotated_sequences_path= config["paths"]["annotated_sequences"]
-        csv_path= config["paths"]["csv_file"]
+        csv_path= config["paths"]["csv_file_metadata"]
         Entrez_email=config["Entrez"]["email"]
         Entrez_api_key=config["Entrez"]["api_key"]
         database=config["Query"]["database"]
