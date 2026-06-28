@@ -59,16 +59,16 @@ TVM+F+G4          -6032.183   12150.366 -   0.0383   12152.499 -    0.035   1238
 GTR+F+G4          -6031.569   12151.138 -    0.026   12153.372 -   0.0226   12393.380 - 1.83e-06
 TPM2u+F+R2        -6044.393   12172.786 - 5.18e-07   12174.821 - 4.98e-07   12404.017 - 8.96e-09
 HKY+F+R2          -6048.828   12179.656 - 1.67e-08   12181.595 - 1.68e-08   12405.381 - 4.53e-09
-K3Pu+F+R2         -6045.537   12175.074 - 1.65e-07   12177.109 - 1.59e-07   12406.304 - 2.85e-09
+K3Pu+F+R2         -6045.537   12175.074 - 1.65e-07   12177.109 - 1.59e-07   12406.305 - 2.85e-09
 TPM3u+F+R2        -6045.604   12175.208 - 1.54e-07   12177.243 - 1.48e-07   12406.439 - 2.67e-09
 TIM2+F+R2         -6042.757   12171.514 - 9.79e-07   12173.647 - 8.95e-07   12408.250 - 1.08e-09
-TN+F+R2           -6046.560   12177.120 - 5.93e-08   12179.155 -  5.7e-08   12408.351 - 1.03e-09
+TN+F+R2           -6046.560   12177.121 - 5.93e-08   12179.155 -  5.7e-08   12408.351 - 1.03e-09
 TIM+F+R2          -6044.061   12174.122 - 2.66e-07   12176.255 - 2.43e-07   12410.858 - 2.93e-10
 TIM3+F+R2         -6044.135   12174.270 - 2.47e-07   12176.403 - 2.26e-07   12411.006 - 2.72e-10
-TVM+F+R2          -6043.584   12175.169 - 1.57e-07   12177.402 - 1.37e-07   12417.411 - 1.11e-11
+TVM+F+R2          -6043.585   12175.169 - 1.57e-07   12177.403 - 1.37e-07   12417.411 - 1.11e-11
 GTR+F+R2          -6042.035   12174.071 - 2.73e-07   12176.407 - 2.25e-07   12421.818 - 1.22e-12
-K2P+G4            -6076.723   12227.446 -    7e-19   12229.025 - 8.45e-19   12431.149 - 1.15e-14
-K2P+G4            -6076.723   12227.446 -    7e-19   12229.025 - 8.45e-19   12431.149 - 1.15e-14
+K2P+G4            -6076.723   12227.446 -    7e-19   12229.026 - 8.45e-19   12431.149 - 1.15e-14
+K2P+G4            -6076.723   12227.446 -    7e-19   12229.026 - 8.45e-19   12431.149 - 1.15e-14
 HKY+G4            -6076.872   12227.744 - 6.03e-19   12229.323 - 7.28e-19   12431.447 - 9.91e-15
 TPM2u+G4          -6074.511   12225.022 - 2.35e-18   12226.688 - 2.72e-18   12434.231 - 2.46e-15
 TPM3u+G4          -6074.538   12225.076 - 2.29e-18   12226.742 - 2.65e-18   12434.285 -  2.4e-15
@@ -98,48 +98,48 @@ GTR+G4            -6072.296   12226.592 - 1.07e-18   12228.532 - 1.08e-18   1245
 SYM+G4            -6072.341   12226.683 - 1.03e-18   12228.622 - 1.03e-18   12452.408 - 2.78e-19
 SYM+G4            -6072.341   12226.683 - 1.03e-18   12228.622 - 1.03e-18   12452.408 - 2.78e-19
 TPM2u+R2          -6081.245   12240.490 - 1.03e-21   12242.245 - 1.14e-21   12455.204 - 6.87e-20
-TPM2+R2           -6081.805   12241.610 - 5.88e-22   12243.364 -  6.5e-22   12456.324 - 3.93e-20
-TPM2+R2           -6081.805   12241.610 - 5.88e-22   12243.364 -  6.5e-22   12456.324 - 3.93e-20
+TPM2+R2           -6081.805   12241.610 - 5.88e-22   12243.365 -  6.5e-22   12456.324 - 3.93e-20
+TPM2+R2           -6081.805   12241.610 - 5.88e-22   12243.365 -  6.5e-22   12456.324 - 3.93e-20
 TIM2+R2           -6080.351   12240.703 - 9.26e-22   12242.548 - 9.78e-22   12460.922 - 3.94e-21
 TIM2e+R2          -6080.435   12240.871 - 8.51e-22   12242.717 - 8.99e-22   12461.091 - 3.62e-21
 TIM2e+R2          -6080.435   12240.871 - 8.51e-22   12242.717 - 8.99e-22   12461.091 - 3.62e-21
-HKY+R2            -6088.358   12252.716 - 2.28e-24   12254.382 - 2.63e-24   12461.925 - 2.39e-21
+HKY+R2            -6088.358   12252.717 - 2.28e-24   12254.383 - 2.63e-24   12461.925 - 2.39e-21
 TVM+R2            -6077.585   12237.170 - 5.42e-21   12239.109 - 5.46e-21   12462.895 - 1.47e-21
 TPM3u+R2          -6085.256   12248.512 - 1.87e-23   12250.266 - 2.06e-23   12463.226 - 1.25e-21
 TVMe+R2           -6077.827   12237.654 - 4.25e-21   12239.593 - 4.28e-21   12463.379 - 1.15e-21
 TVMe+R2           -6077.827   12237.654 - 4.25e-21   12239.593 - 4.28e-21   12463.379 - 1.15e-21
-K2P+R2            -6089.425   12254.850 - 7.84e-25   12256.516 - 9.06e-25   12464.059 - 8.21e-22
-K2P+R2            -6089.425   12254.850 - 7.84e-25   12256.516 - 9.06e-25   12464.059 - 8.21e-22
-TPM3+R2           -6086.118   12250.235 - 7.88e-24   12251.990 - 8.71e-24   12464.950 - 5.26e-22
-TPM3+R2           -6086.118   12250.235 - 7.88e-24   12251.990 - 8.71e-24   12464.950 - 5.26e-22
+K2P+R2            -6089.425   12254.851 - 7.84e-25   12256.517 - 9.06e-25   12464.059 - 8.21e-22
+K2P+R2            -6089.425   12254.851 - 7.84e-25   12256.517 - 9.06e-25   12464.059 - 8.21e-22
+TPM3+R2           -6086.118   12250.236 - 7.88e-24   12251.990 - 8.71e-24   12464.950 - 5.26e-22
+TPM3+R2           -6086.118   12250.236 - 7.88e-24   12251.990 - 8.71e-24   12464.950 - 5.26e-22
 K3Pu+R2           -6086.448   12250.895 - 5.67e-24   12252.650 - 6.26e-24   12465.609 - 3.78e-22
-K3P+R2            -6087.067   12252.134 - 3.05e-24   12253.889 - 3.37e-24   12466.849 - 2.03e-22
-K3P+R2            -6087.067   12252.134 - 3.05e-24   12253.889 - 3.37e-24   12466.849 - 2.03e-22
+K3P+R2            -6087.067   12252.135 - 3.05e-24   12253.889 - 3.37e-24   12466.849 - 2.03e-22
+K3P+R2            -6087.067   12252.135 - 3.05e-24   12253.889 - 3.37e-24   12466.849 - 2.03e-22
 TIM3+R2           -6083.598   12247.195 -  3.6e-23   12249.041 -  3.8e-23   12467.415 - 1.53e-22
 TN+R2             -6087.369   12252.737 - 2.26e-24   12254.492 - 2.49e-24   12467.451 - 1.51e-22
 TIM3e+R2          -6083.912   12247.824 - 2.63e-23   12249.670 - 2.78e-23   12468.044 - 1.12e-22
 TIM3e+R2          -6083.912   12247.824 - 2.63e-23   12249.670 - 2.78e-23   12468.044 - 1.12e-22
-TNe+R2            -6088.094   12254.188 - 1.09e-24   12255.942 - 1.21e-24   12468.902 - 7.29e-23
-TNe+R2            -6088.094   12254.188 - 1.09e-24   12255.942 - 1.21e-24   12468.902 - 7.29e-23
+TNe+R2            -6088.094   12254.188 - 1.09e-24   12255.943 - 1.21e-24   12468.902 - 7.29e-23
+TNe+R2            -6088.094   12254.188 - 1.09e-24   12255.943 - 1.21e-24   12468.902 - 7.29e-23
 GTR+R2            -6077.371   12238.743 - 2.47e-21   12240.778 - 2.37e-21   12469.973 - 4.27e-23
 SYM+R2            -6077.461   12238.922 - 2.26e-21   12240.957 - 2.17e-21   12470.152 -  3.9e-23
 SYM+R2            -6077.461   12238.922 - 2.26e-21   12240.957 - 2.17e-21   12470.152 -  3.9e-23
-TIM+R2            -6085.426   12250.852 - 5.79e-24   12252.697 - 6.11e-24   12471.071 - 2.46e-23
-TIMe+R2           -6085.577   12251.155 - 4.98e-24   12253.000 - 5.25e-24   12471.374 - 2.12e-23
-TIMe+R2           -6085.577   12251.155 - 4.98e-24   12253.000 - 5.25e-24   12471.374 - 2.12e-23
+TIM+R2            -6085.426   12250.852 - 5.79e-24   12252.698 - 6.11e-24   12471.071 - 2.46e-23
+TIMe+R2           -6085.577   12251.155 - 4.98e-24   12253.001 - 5.25e-24   12471.374 - 2.12e-23
+TIMe+R2           -6085.577   12251.155 - 4.98e-24   12253.001 - 5.25e-24   12471.374 - 2.12e-23
 F81+F+G4          -6308.095   12694.191 - 3.11e-120   12695.945 - 3.44e-120   12908.905 - 2.08e-118
 F81+F+R2          -6306.482   12692.965 - 5.74e-120   12694.811 - 6.06e-120   12913.185 - 2.44e-119
-F81+G4            -6345.624   12763.248 - 3.14e-135   12764.744 - 3.95e-135   12961.446 - 8.09e-130
+F81+G4            -6345.625   12763.249 - 3.14e-135   12764.745 - 3.95e-135   12961.447 - 8.09e-130
 JC+G4             -6345.700   12763.400 - 2.91e-135   12764.895 - 3.66e-135   12961.597 - 7.5e-130
 JC+G4             -6345.700   12763.400 - 2.91e-135   12764.895 - 3.66e-135   12961.597 - 7.5e-130
 F81+R2            -6343.883   12761.766 - 6.59e-135   12763.346 - 7.95e-135   12965.469 - 1.08e-130
 JC+R2             -6343.945   12761.890 - 6.2e-135   12763.469 - 7.48e-135   12965.593 - 1.02e-130
 JC+R2             -6343.945   12761.890 - 6.2e-135   12763.469 - 7.48e-135   12965.593 - 1.02e-130
 JC+I+R2           -6344.533   12765.066 - 1.27e-135   12766.732 - 1.46e-135   12974.274 - 1.33e-132
-JC+I+G4           -6348.474   12770.949 - 6.68e-137   12772.528 - 8.06e-137   12974.652 - 1.1e-132
+JC+I+G4           -6348.477   12770.954 - 6.67e-137   12772.533 - 8.04e-137   12974.657 - 1.09e-132
 JC+R3             -6344.186   12766.373 - 6.59e-136   12768.128 - 7.28e-136   12981.087 - 4.4e-134
 JC+I+R3           -6344.626   12769.251 - 1.56e-136   12771.097 - 1.65e-136   12989.471 - 6.64e-136
-JC+I              -6365.168   12802.336 - 1.02e-143   12803.831 - 1.29e-143   13000.533 - 2.63e-138
+JC+I              -6365.168   12802.335 - 1.02e-143   12803.831 - 1.29e-143   13000.533 - 2.63e-138
 JC                -6531.872   13133.745 - 1.11e-215   13135.159 - 1.45e-215   13326.437 - 4.48e-209
 
 AIC, w-AIC   : Akaike information criterion scores and weights.
@@ -208,46 +208,46 @@ NOTE: Tree is UNROOTED although outgroup taxon 'outgroup_PX489887.1' is drawn at
 Numbers in parentheses are  ultrafast bootstrap support (%)
 
             +--EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378
-         +--| (72)
+         +--| (81)
          |  |  +--EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566
-         |  +--| (93)
+         |  +--| (94)
          |     +--EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555
-      +--| (54)
+      +--| (51)
       |  |              +**EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544
-      |  |           +**| (74)
+      |  |           +**| (72)
       |  |           |  +**EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362
-      |  |        +--| (54)
+      |  |        +--| (57)
       |  |        |  +--EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083
-      |  |     +--| (84)
+      |  |     +--| (87)
       |  |     |  +--EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535
-      |  |  +--| (47)
+      |  |  +--| (45)
       |  |  |  +--EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703
-      |  +--| (80)
+      |  +--| (68)
       |     +--EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979
-   +--| (91)
+   +--| (90)
    |  |     +--EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843
-   |  |  +--| (92)
+   |  |  +--| (87)
    |  |  |  +--EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092
-   |  +--| (88)
+   |  +--| (92)
    |     |  +--EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619
-   |     +--| (76)
+   |     +--| (82)
    |        |  +--EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887
    |        +--| (100)
    |           +**EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865
-+--| (69)
++--| (70)
 |  +--KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769
 |
 |  +**JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554
-+--| (86)
++--| (82)
 |  |  +--JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640
-|  +--| (86)
+|  +--| (90)
 |     +--JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799
 |
 +-----------------------------------------------------------outgroup_PX489887.1
 
 Tree in newick format:
 
-(((((EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378:0.0329229902,(EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566:0.0083143886,EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555:0.0110351109)93:0.0161579450)72:0.0206013246,(((((EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544:0.0000010000,EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362:0.0000010000)74:0.0000010000,EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083:0.0083017696)54:0.0011894010,EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535:0.0049644945)84:0.0113594545,EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703:0.0071295922)47:0.0039461107,EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979:0.0110613776)80:0.0316973492)54:0.0429622650,((EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843:0.0132833623,EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092:0.0123366641)92:0.0157184164,(EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619:0.0309369259,(EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887:0.0031860701,EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865:0.0000020757)100:0.0359008803)76:0.0183126199)88:0.0577531926)91:0.5454355203,KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769:0.0521486364)69:0.0514584543,(JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554:0.0000010000,(JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640:0.0015725237,JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799:0.0023501276)86:0.0007661699)86:0.0161397004,outgroup_PX489887.1:9.9999986477);
+(((((EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378:0.0329229903,(EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566:0.0083143886,EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555:0.0110351109)94:0.0161579450)81:0.0206013247,(((((EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544:0.0000010000,EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362:0.0000010000)72:0.0000010000,EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083:0.0083017696)57:0.0011894009,EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535:0.0049644945)87:0.0113594545,EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703:0.0071295922)45:0.0039461107,EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979:0.0110613776)68:0.0316973493)51:0.0429622650,((EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843:0.0132833624,EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092:0.0123366641)87:0.0157184164,(EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619:0.0309369259,(EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887:0.0031860701,EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865:0.0000020757)100:0.0359008804)82:0.0183126199)92:0.0577531928)90:0.5454355207,KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769:0.0521486365)70:0.0514584537,(JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554:0.0000010000,(JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640:0.0015725237,JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799:0.0023501276)90:0.0007661699)82:0.0161397010,outgroup_PX489887.1:9.9999986477);
 
 CONSENSUS TREE
 --------------
@@ -261,39 +261,39 @@ Branch lengths are optimized by maximum likelihood on original alignment
 Numbers in parentheses are bootstrap supports (%)
 
             +--EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378
-         +--| (72)
+         +--| (81)
          |  |  +--EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566
-         |  +--| (93)
+         |  +--| (94)
          |     +--EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555
-      +--| (54)
+      +--| (51)
       |  |              +--EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544
-      |  |           +--| (74)
+      |  |           +--| (72)
       |  |           |  +--EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362
-      |  |        +--| (54)
+      |  |        +--| (57)
       |  |        |  +--EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083
-      |  |     +--| (84)
+      |  |     +--| (87)
       |  |     |  +--EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535
-      |  |  +--| (47)
+      |  |  +--| (45)
       |  |  |  +--EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703
-      |  +--| (80)
+      |  +--| (68)
       |     +--EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979
-   +--| (91)
+   +--| (90)
    |  |     +--EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843
-   |  |  +--| (92)
+   |  |  +--| (87)
    |  |  |  +--EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092
-   |  +--| (88)
+   |  +--| (92)
    |     |  +--EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619
-   |     +--| (76)
+   |     +--| (82)
    |        |  +--EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887
    |        +--| (100)
    |           +--EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865
-+--| (69)
++--| (70)
 |  +--KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769
 |
 |  +--JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554
-+--| (86)
++--| (82)
 |  |  +--JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640
-|  +--| (86)
+|  +--| (90)
 |     +--JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799
 |
 +-----------------------------------------------------------outgroup_PX489887.1
@@ -301,7 +301,7 @@ Numbers in parentheses are bootstrap supports (%)
 
 Consensus tree in newick format: 
 
-(((((EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378:0.0329142968,(EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566:0.0083099879,EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555:0.0110341602)93:0.0161554749)72:0.0205937254,(((((EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544:0.0000020757,EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362:0.0000020757)74:0.0000020757,EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083:0.0082986223)54:0.0011883954,EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535:0.0049623655)84:0.0113564986,EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703:0.0071269724)47:0.0039429937,EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979:0.0110614590)80:0.0316916744)54:0.0429861842,((EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843:0.0132793953,EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092:0.0123339460)92:0.0157123515,(EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619:0.0309301153,(EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887:0.0031840734,EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865:0.0000020800)100:0.0358916516)76:0.0183093515)88:0.0577004358)91:0.5453272774,KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769:0.0522623630)69:0.0242956310,(JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554:0.0000020757,(JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640:0.0015713261,JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799:0.0023483511)86:0.0007654702)86:0.0429107830,outgroup_PX489887.1:9.9999987126);
+(((((EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378:0.0329142970,(EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566:0.0083099879,EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555:0.0110341603)94:0.0161554750)81:0.0205937255,(((((EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544:0.0000020757,EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362:0.0000020757)72:0.0000020757,EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083:0.0082986223)57:0.0011883954,EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535:0.0049623655)87:0.0113564987,EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703:0.0071269724)45:0.0039429937,EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979:0.0110614591)68:0.0316916746)51:0.0429861843,((EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843:0.0132793954,EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092:0.0123339461)87:0.0157123515,(EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619:0.0309301155,(EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887:0.0031840734,EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865:0.0000020800)100:0.0358916517)82:0.0183093517)92:0.0577004362)90:0.5453272797,KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769:0.0522623634)70:0.0242956314,(JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554:0.0000020757,(JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640:0.0015713210,JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799:0.0023483585)90:0.0007654702)82:0.0429107828,outgroup_PX489887.1:9.9999987126);
 
 ALISIM COMMAND
 --------------
@@ -322,7 +322,7 @@ For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 TIME STAMP
 ----------
 
-Date and time: Mon Jun 22 14:57:35 2026
-Total CPU time used: 85.876613 seconds (0h:1m:25s)
-Total wall-clock time used: 43.35668516 seconds (0h:0m:43s)
+Date and time: Mon Jun 29 00:06:33 2026
+Total CPU time used: 77.734291 seconds (0h:1m:17s)
+Total wall-clock time used: 39.96923399 seconds (0h:0m:39s)
 

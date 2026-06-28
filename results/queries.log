@@ -1,6 +1,12 @@
-2026-06-29 00:00:42,536	phylo_pipeline	INFO	Starting pipeline with step: pre_alignment_eda and with configuration file: dataConfig.json
-2026-06-29 00:00:45,287	phylo_pipeline	INFO	Pre-alignment EDA completed. Results saved in results/figures/pre_alignment_eda.png and in data/csv/pre_alignment_summary.csv
-2026-06-29 00:00:45,288	phylo_pipeline	INFO	{'summary': {'n_sequences': 18, 'mean_length': 1005.3333333333334, 'median_length': 943.0, 'mean_gc_content': 43.578088804735444, 'median_gc_content': 43.84941675503712, 'max_ambiguous_perc': 0.0, 'gc_outliers': 0, 'mean_pairwise_identity': 66.59345202408072, 'mean_pairwise_coverage': 90.89009578999377}, 'dataframe':             ID  Length  GC_Content  Ambiguous_Perc  GC_Outlier
+2026-06-29 00:05:31,984	phylo_pipeline	INFO	Starting pipeline with step: all and with configuration file: dataConfig.json
+2026-06-29 00:05:32,002	phylo_pipeline	INFO	Querying NCBI nucleotide for organism 'Andes orthohantavirus' and gene 'nucleocapsid'
+2026-06-29 00:05:34,294	phylo_pipeline	INFO	Sequences downloaded and saved to data/raw/sequences.fasta: 116
+2026-06-29 00:05:34,295	phylo_pipeline	INFO	Searching for outgroup for ingroup 'Andes orthohantavirus' at rank 'genus' targeting gene 'nucleocapsid'
+2026-06-29 00:05:34,295	phylo_pipeline	INFO	Querying NCBI Taxonomy for ingroup taxon 'Andes orthohantavirus'
+2026-06-29 00:05:35,554	phylo_pipeline	INFO	Outgroup ID found: 3101830602
+2026-06-29 00:05:36,174	phylo_pipeline	INFO	Filtered sequences saved to data/processed/sequences_filtered.fasta: 18 records
+2026-06-29 00:05:38,881	phylo_pipeline	INFO	Pre-alignment EDA completed. Results saved in results/figures/pre_alignment_eda.png and in data/csv/pre_alignment_summary.csv
+2026-06-29 00:05:38,882	phylo_pipeline	INFO	{'summary': {'n_sequences': 18, 'mean_length': 1005.3333333333334, 'median_length': 943.0, 'mean_gc_content': 43.578088804735444, 'median_gc_content': 43.84941675503712, 'max_ambiguous_perc': 0.0, 'gc_outliers': 0, 'mean_pairwise_identity': 66.59345202408072, 'mean_pairwise_coverage': 90.89009578999377}, 'dataframe':             ID  Length  GC_Content  Ambiguous_Perc  GC_Outlier
 0   EU241702.1     943   43.160127             0.0       False
 1   EU241701.1     943   42.629905             0.0       False
 2   EU241700.1     943   42.629905             0.0       False
@@ -19,4 +25,168 @@
 15  JF750419.1    1287   44.211344             0.0       False
 16  JF750418.1    1287   44.211344             0.0       False
 17  JF750417.1    1287   44.055944             0.0       False, 'pairwise_identities': [94.90986214209968, 94.69777306468717, 92.15270413573701, 92.36479321314953, 91.9406150583245, 92.25874867444327, 92.15270413573701, 92.15270413573701, 88.54718981972428, 88.01696712619301, 88.45738942826321, 86.3202545068929, 86.68831168831169, 24.708377518557796, 25.874867444326615, 25.768822905620357, 25.980911983032872, 98.09119830328738, 92.57688229056204, 92.78897136797455, 92.78897136797455, 92.89501590668081, 92.57688229056204, 92.78897136797455, 88.97136797454931, 88.33510074231177, 88.9967637540453, 87.48674443266172, 87.87878787878788, 25.13255567338282, 26.82926829268293, 26.723223753976672, 26.935312831389187, 92.36479321314953, 92.57688229056204, 92.15270413573701, 92.47083775185578, 92.36479321314953, 92.57688229056204, 89.81972428419937, 89.39554612937434, 89.32038834951457, 87.91092258748674, 88.41991341991343, 24.390243902439025, 26.723223753976672, 26.617179215270415, 26.82926829268293, 99.36373276776246, 98.09119830328738, 99.15164369034994, 100.0, 97.24284199363733, 89.07741251325557, 89.07741251325557, 88.56526429341963, 87.8048780487805, 88.09523809523809, 24.17815482502651, 26.617179215270415, 26.511134676564158, 26.723223753976672, 97.66702014846236, 98.72746553552491, 99.36373276776246, 97.24284199363733, 89.28950159066808, 89.28950159066808, 88.78101402373247, 87.8048780487805, 88.09523809523809, 24.390243902439025, 26.82926829268293, 26.723223753976672, 26.935312831389187, 97.66702014846236, 98.09119830328738, 97.87910922587487, 88.44114528101802, 88.22905620360551, 87.8101402373247, 87.8048780487805, 88.09523809523809, 24.390243902439025, 26.193001060445386, 26.08695652173913, 26.299045599151643, 99.15164369034994, 96.71261930010604, 89.28950159066808, 89.28950159066808, 88.67313915857605, 87.59278897136798, 87.87878787878788, 24.496288441145282, 26.723223753976672, 26.617179215270415, 26.82926829268293, 97.24284199363733, 89.07741251325557, 89.07741251325557, 88.56526429341963, 87.8048780487805, 88.09523809523809, 24.17815482502651, 26.617179215270415, 26.511134676564158, 26.723223753976672, 89.28950159066808, 88.86532343584305, 88.56526429341963, 88.22905620360551, 88.63636363636364, 24.496288441145282, 26.299045599151643, 26.193001060445386, 26.4050901378579, 97.5609756097561, 93.6353829557713, 93.00106044538707, 93.18181818181817, 25.026511134676564, 26.193001060445386, 26.08695652173913, 26.299045599151643, 93.52750809061489, 93.4252386002121, 93.61471861471861, 24.920466595970307, 26.4050901378579, 26.299045599151643, 26.511134676564158, 94.1747572815534, 94.26406926406926, 25.026968716289105, 26.537216828478964, 26.429341963322546, 26.64509169363538, 99.67532467532467, 24.920466595970307, 25.768822905620357, 25.6627783669141, 25.874867444326615, 25.216450216450216, 26.190476190476193, 26.082251082251084, 26.2987012987013, 27.99625468164794, 28.08988764044944, 27.715355805243448, 99.76689976689977, 99.6891996891997, 99.61149961149961], 'output_files': {'image_resume': 'results/figures/pre_alignment_eda.png', 'summary_csv': 'data/csv/pre_alignment_summary.csv'}}
-2026-06-29 00:00:45,318	phylo_pipeline	INFO	Pipeline completed successfully.
+2026-06-29 00:05:38,907	phylo_pipeline	INFO	Starting metadata addition process.
+2026-06-29 00:05:39,305	phylo_pipeline	INFO	Metadata for: EU241702.1 -> EU241702.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120378
+2026-06-29 00:05:39,683	phylo_pipeline	INFO	Metadata for: EU241701.1 -> EU241701.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96566
+2026-06-29 00:05:40,121	phylo_pipeline	INFO	Metadata for: EU241700.1 -> EU241700.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96555
+2026-06-29 00:05:40,678	phylo_pipeline	INFO	Metadata for: EU241699.1 -> EU241699.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104544
+2026-06-29 00:05:41,045	phylo_pipeline	INFO	Metadata for: EU241698.1 -> EU241698.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104535
+2026-06-29 00:05:41,400	phylo_pipeline	INFO	Metadata for: EU241697.1 -> EU241697.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96703
+2026-06-29 00:05:42,010	phylo_pipeline	INFO	Metadata for: EU241696.1 -> EU241696.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK95083
+2026-06-29 00:05:42,358	phylo_pipeline	INFO	Metadata for: EU241695.1 -> EU241695.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105362
+2026-06-29 00:05:42,733	phylo_pipeline	INFO	Metadata for: EU241694.1 -> EU241694.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK105979
+2026-06-29 00:05:43,119	phylo_pipeline	INFO	Metadata for: EU241693.1 -> EU241693.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK108843
+2026-06-29 00:05:43,621	phylo_pipeline	INFO	Metadata for: EU241692.1 -> EU241692.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK120092
+2026-06-29 00:05:44,273	phylo_pipeline	INFO	Metadata for: EU241691.1 -> EU241691.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK104619
+2026-06-29 00:05:44,663	phylo_pipeline	INFO	Metadata for: EU241690.1 -> EU241690.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96887
+2026-06-29 00:05:45,207	phylo_pipeline	INFO	Metadata for: EU241689.1 -> EU241689.1|Orthohantavirus_andesense|Unknown|Chile|Oligoryzomys_longicaudatus|NK96865
+2026-06-29 00:05:45,743	phylo_pipeline	INFO	Metadata for: KF581134.1 -> KF581134.1|Castelo_dos_Sonhos_virus|2010|Peru|Neacomys_spinosus|769
+2026-06-29 00:05:46,256	phylo_pipeline	INFO	Metadata for: JF750419.1 -> JF750419.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB554
+2026-06-29 00:05:46,705	phylo_pipeline	INFO	Metadata for: JF750418.1 -> JF750418.1|Tunari_virus|2008|Bolivia|Homo_sapiens|FVB640
+2026-06-29 00:05:47,056	phylo_pipeline	INFO	Metadata for: JF750417.1 -> JF750417.1|Tunari_virus|2009|Bolivia|Homo_sapiens|FVB799
+2026-06-29 00:05:47,090	phylo_pipeline	INFO	FASTA file with metadata successfully saved to: data/processed/annotated_sequences.fasta
+2026-06-29 00:05:47,099	phylo_pipeline	INFO	csv file saved successfully in: data/csv/csv_file_metadata.csv
+2026-06-29 00:05:47,162	phylo_pipeline	INFO	Combined sequences saved to data/processed/sequences_combined.fasta
+2026-06-29 00:05:53,052	phylo_pipeline	INFO	outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: 8192 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 19
+    1 / 19
+    2 / 19
+    3 / 19
+    4 / 19
+    5 / 19
+    6 / 19
+    7 / 19
+    8 / 19
+    9 / 19
+   10 / 19
+   11 / 19
+   12 / 19
+   13 / 19
+   14 / 19
+   15 / 19
+   16 / 19
+   17 / 19
+tbfast-pair (nuc) Version 7.525
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+0 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+
+    0 / 19
+   10 / 19
+done.
+
+Progressive alignment ... 
+
+STEP     1 /18 
+STEP     2 /18 
+STEP     3 /18 
+STEP     4 /18 
+STEP     5 /18 
+STEP     6 /18 
+STEP     7 /18 
+STEP     8 /18 
+STEP     9 /18 
+STEP    10 /18 
+STEP    11 /18 
+STEP    12 /18 
+STEP    13 /18 
+STEP    14 /18 
+STEP    15 /18 
+STEP    16 /18 
+STEP    17 /18 
+STEP    18 /18 
+done.
+tbfast (nuc) Version 7.525
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+1 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 0
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+
+    0 / 19
+   10 / 19
+Segment   1/  1    1-1819
+STEP 001-001-0  identical.   
+STEP 001-001-1  identical.   
+STEP 001-002-0  identical.   
+STEP 001-002-1  identical.   
+STEP 001-003-0  identical.   
+STEP 001-003-1  identical.   
+STEP 001-004-0  identical.   
+STEP 001-004-1  identical.   
+STEP 001-005-0  identical.   
+STEP 001-005-1  identical.   
+STEP 001-006-0  identical.   
+STEP 001-006-1  identical.   
+STEP 001-007-0  identical.   
+STEP 001-007-1  identical.   
+STEP 001-008-0  identical.   
+STEP 001-008-1  identical.   
+STEP 001-009-0  identical.   
+STEP 001-009-1  identical.   
+STEP 001-010-0  identical.   
+STEP 001-010-1  identical.   
+STEP 001-011-0  identical.   
+STEP 001-011-1  identical.   
+STEP 001-012-0  identical.   
+STEP 001-012-1  identical.   
+STEP 001-013-0  identical.   
+STEP 001-013-1  identical.   
+STEP 001-014-0  identical.   
+STEP 001-014-1  identical.   
+STEP 001-015-0  identical.   
+STEP 001-015-1  identical.   
+STEP 001-016-0  identical.   
+STEP 001-016-1  identical.   
+STEP 001-017-0  identical.   
+STEP 001-017-1  identical.   
+STEP 001-018-1  identical.   
+STEP 002-018-1  identical.   
+STEP 002-017-0  identical.   
+STEP 002-017-1  identical.   
+Converged.
+
+done
+dvtditr (nuc) Version 7.525
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+0 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+
+
+2026-06-29 00:05:53,103	phylo_pipeline	INFO	Alignment saved to data/processed/alignment.fasta: 19 sequences, length 1818
+2026-06-29 00:06:35,561	phylo_pipeline	INFO	Tree figure saved to: results/figures/tree.png
+2026-06-29 00:06:35,562	phylo_pipeline	INFO	Pipeline completed successfully.
